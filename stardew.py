@@ -21,10 +21,11 @@ class Player:
         else:
             pass
         if Dict.dict_of_flags['Open cutscene'] == 0:
-            cutscenes.open_cutscene(self.name)
+            self.farm_name = cutscenes.open_cutscene(self.name)
+            Dict.dict_of_flags['Open cutscene'] = 1
         else:
             pass
-        imp = input('What would you like to do?: ')
+        imp = input('-' + self.farm_name + '-')
         bones.interpreter(bones.parser(imp))
 
 

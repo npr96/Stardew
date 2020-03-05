@@ -1,5 +1,6 @@
 from Modules import Dict
 import stardew
+import winsound
 
 
 def open_cutscene(name):
@@ -20,21 +21,22 @@ def open_cutscene(name):
             break
         elif res == '2':
             print(Dict.dict_of_open_cutscene[5])
-            res2 = input('''
+            power_switch2 = 1
+            while power_switch2 == 1:
+                res2 = input('''
 1. I remember!
 2. I'm sorry...
 : ''')
-            power_switch2 = 1
-            while power_switch == 1:
-                if res2 == 1:
+                if res2 == '1':
                     print(Dict.dict_of_open_cutscene[6])
                     break
-                elif res2 == 2:
+                elif res2 == '2':
                     print(Dict.dict_of_open_cutscene[7])
                     break
                 else:
                     print('Stardew didn\'t understand, please type 1 or 2')
                     continue
+            break
         else:
             print('Stardew didn\'t understand, please type 1 or 2')
             continue
@@ -49,3 +51,12 @@ def open_cutscene(name):
             continue
     print(Dict.dict_of_open_cutscene[9])
     _ = input('press [enter] to continue')
+    print(Dict.dict_of_open_cutscene[10])
+    _ = input('press [enter] to continue')
+    print(Dict.dict_of_open_cutscene[11])
+    farm_name = input('I think the name was... : ')
+    print('Lewis: ' + farm_name + Dict.dict_of_open_cutscene[12])
+    _ = input('press [enter] to continue')
+    print(Dict.dict_of_open_cutscene[13])
+    return farm_name
+

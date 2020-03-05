@@ -12,7 +12,8 @@ def start():
 
 
 def parser(imp):
-    pass
+    parsimp = imp.split()
+    return parsimp
 
 
 def interpreter(parsimp):

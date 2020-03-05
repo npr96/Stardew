@@ -55,5 +55,21 @@ friend of your grandfather. Lets go look at the farm.''',
                                           |8888888888888|
                                           |88888888888888|
                         As you follow Lewis down the road, a bluebird hops out of th forrest, and 
-                          jumps onto a stump, it looks at you inquisitivly before flying away.'''
+                          jumps onto a stump, it looks at you inquisitivly before flying away.''',
+    10: '''
+                                                    .    ~~~~
+                                                ......... ~~
+                                            ..............||.
+                                        .........................
+                                          |===================|   _____
+                                          |=___===============|   |___|
+                                          |=| |===============|     |   
+                    You walk through the gate onto the farm, and you see the farmhouse, next to
+                                the farmhouse is a sign, illegible now with age''',
+    11: '''Lewis: Oh dear, I meant to fix that sign before you arrived, thing is, I can't remember what your gramps used
+to call this place. Do you remember?''',
+    12: ''' ... That's right! I will bring the new sign by tomorrow.
+You walk into the house with Lewis. It is cozy, and consists of a kitchen, living room and bedroom, everything is fully
+furnished.''',
+    13: '''Lewis: I'll leave you to it then, sleep well, tomorrow, try typing help to get started.'''
 }
